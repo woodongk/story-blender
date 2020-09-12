@@ -6,8 +6,7 @@
 
 ### 1. 데이터셋 : VIST
 
-- 본 연구를 위한 데이터로 마이크로소프트 사에서 제공하는 VIST(Visual Storytelling Dataset)을 사용하였다.    
-- VIST는 특정 이벤트로 묶인 순차적인 이미지들을 각각 캡션 문장(descriptions for images in isolation, DII)과 순차적인 스토리 문장(stories for images in sequence, SIS)의 쌍으로 제공함.
-- (주로 Image Captioning Task에 쓰이는 데이터셋)
+- 본 연구를 위한 데이터로 마이크로소프트 사에서 제공하는 VIST(Visual Storytelling Dataset)을 사용함 
+- VIST는 주로 Image Captioning Task에 쓰이는 데이터셋으로, 특정 이벤트로 묶인 순차적인 이미지들을 각각 캡션 문장(descriptions for images in isolation, DII)과 순차적인 스토리 문장(stories for images in sequence, SIS)의 쌍으로 제공
 
 ### 2. 
