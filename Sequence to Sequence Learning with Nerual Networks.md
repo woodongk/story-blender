@@ -6,6 +6,8 @@
 
 ![](imgs/9C11E5E0-8069-4F41-A294-7041C45E0FB2.png)
 
+### Model
+
 #### Problems
  - **Problem 1. input과 output의 길이가 다를 경우**
     - A simple strategy for general sequence learning is to map the input sequence to a fixed-sized vector using one RNN, and then to map the vector to the target sequence with another RNN; RNN을 사용해서 input sequence를 고정 길이 벡터로 변환
@@ -26,6 +28,20 @@ y1, . . . , yT ′  is its corresponding output sequence whose length T ′ may 
 - Second, **we found that deep LSTMs significantly outperformed shallow LSTMs**, ~so we chose an LSTM with four layers~. 
 - Third, **we found it extremely valuable to reverse the order of the words of the input sentence.** ; input sentence의 어순을 Reverse하여 적용시킬 것 -> 매우 큰 성능 향상 So for example, instead of mapping the sentence a,b,c to the sentence α,β,γ, the LSTM is asked to map c,b,a to α,β,γ, where α, β, γ is the translation of a, b, c. This way, a is in close proximity to α, b is fairly close to β, and so on, ~a fact that makes it easy for SGD to “establish communication” between the input and the output~. We found this simple data transformation to greatly boost the performance of the LSTM. 
 
+
+### Experiments
+#### Dataset
+- WMT'14 English to French dataset.
+- 12M sentences consisting of 348M French words and 304M English words
+- Authors used 160,000 of the most frequent words for the source language and 80,000 of the most frequent words for the target language.
+- Every out-of-vocabulary word was replaced with a special "UNK" token.
+
+#### Decoding and Rescoring
+- We trained it by **maximizing the log probability of a correct translation T given the source sentence S**
+    -  정답 vs source 간 확률의 합이 가장 커지도록 학습
+- 학습이 끝나면, 가장 적합한 translation 을 찾아서 translation 을 생성함
+- ????
+- <EOS> symbol을 만나면 beam에서 삭제됨?
 
 
 
