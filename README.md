@@ -18,3 +18,6 @@
 - Image Captioning Task에 쓰이는 기술은 현 시점에서 매우 발전되어 있기에 데이터셋 또한 쉽게 구할 수 있었음 
 
 ### 2. 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk0MTMxMzkzMl19
+-->
