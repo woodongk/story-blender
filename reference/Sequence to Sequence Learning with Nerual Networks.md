@@ -4,7 +4,7 @@
 - This paper presents **a general end-to-end approach to sequence learning** that makes minimal assumptions on the sequence structure. 
 - Their method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. 
 
-![](imgs/9C11E5E0-8069-4F41-A294-7041C45E0FB2.png)
+![](../imgs/9C11E5E0-8069-4F41-A294-7041C45E0FB2.png)
 
 ### Model
 
@@ -71,11 +71,11 @@ y1, . . . , yT ′  is its corresponding output sequence whose length T ′ may 
 - We used the cased BLEU score to evaluate the quality of our translations. 
 	- using multi-bleu.pl1 on the tokenized predictions and ground truth. 
 
-![](imgs/seq2seq table1.PNG)
+![](../imgs/seq2seq%20table1.PNG)
 - an ensemble of 5 LSTMs with a beam of size 2 is cheaper than of a single LSTM with a beam of size 12.
 
-![](imgs/seq2seq table2.PNG)
-![](imgs/comparison_baseline.PNG)
+![](../imgs/seq2seq%20table2.PNG)
+![](../imgs/comparison_baseline.PNG)
 - While the decoded translations of the LSTM ensemble do not beat the state of the art, it is the first time that a pure neural translation system outperforms a phrase-based SMT baseline on a large MT task
 
 
