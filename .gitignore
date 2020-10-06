@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .idea
+seq2seq_model.h5
 
 # C extensions
 *.so
