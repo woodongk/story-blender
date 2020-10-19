@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 .idea
 seq2seq_model.h5
+model_output/*
+training_checkpoints/*
 
 # C extensions
 *.so
