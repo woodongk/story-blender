@@ -33,9 +33,5 @@
 - [Using pre-trained word embeddings in a Keras model](https://blog.keras.io/using-pre-trained-word-embeddings-in-a-keras-model.html)
 - [Implementing a CNN for Text Classification in TensorFlow – WildML](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
 
-### Contact
-- 김우정 [gks3284@ajou.ac.kr]
-- 한재호 [woghrnt2@ajou.ac.kr]
-
 
 
